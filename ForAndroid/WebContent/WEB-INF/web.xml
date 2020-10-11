@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>ForAndroid</display-name>
+  <welcome-file-list>
+    <welcome-file>login.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+    <servlet-name>loginServlet</servlet-name>
+    <servlet-class>android.servlet.LoginServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>registerServlet</servlet-name>
+    <servlet-class>android.servlet.RegisterServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>changePasswordServlet</servlet-name>
+    <servlet-class>android.servlet.ChangePassword</servlet-class>
+  </servlet>
+    <servlet>
+    <servlet-name>forgetPasswordServlet</servlet-name>
+    <servlet-class>android.servlet.ForgetPassword</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>loginServlet</servlet-name>
+    <url-pattern>/loginServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>registerServlet</servlet-name>
+    <url-pattern>/registerServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>changePasswordServlet</servlet-name>
+    <url-pattern>/changePasswordServlet</url-pattern>
+  </servlet-mapping>
+    <servlet-mapping>
+    <servlet-name>forgetPasswordServlet</servlet-name>
+    <url-pattern>/forgetPasswordServlet</url-pattern>
+  </servlet-mapping>
+</web-app>
+
