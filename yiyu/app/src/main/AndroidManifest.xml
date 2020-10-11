@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.yiyu">
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/tb"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:networkSecurityConfig="@xml/network_config"
+        android:roundIcon="@mipmap/tb"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+      
+        <activity android:name=".ChangePassword2Activity" />
+        <activity android:name=".Forget2Activity" />
+        <activity android:name=".Register2Activity" />
+        <activity android:name=".Login2Activity" />
+        <activity android:name=".ChangePasswordActivity" />
+        <activity android:name=".ForgetActivity" />
+        <activity android:name=".HelpActivity" />
+        <activity android:name=".SplashActivity"
+            android:theme="@style/AppTheme.StartingWindowTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".MainActivity" />
+    </application>
+
+</manifest>
